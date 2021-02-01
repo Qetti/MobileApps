@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FinalTask</string>
+    <string name="appLogoAlt">ფინალური დავალება</string>
+    <string name="splashAppTitle">აჯაფსანდალი</string>
+    <string name="splashAppDescription">© ქეთევან ოთიაშვილი, საბა სუდაძე</string>
+    <string name="todoApp">Todo აპლიკაცია</string>
+    <string name="game">თამაში</string>
+    <string name="chooseActivity">აირჩიეთ სასურველი აქტივობა</string>
 </resources>

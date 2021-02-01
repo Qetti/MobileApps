@@ -9,14 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homework56">
-        <activity android:name=".LoginActivity">
+
+        <activity android:name=".GameActivity"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.finalTask.MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ToDoActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
