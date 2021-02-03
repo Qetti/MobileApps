@@ -23,8 +23,8 @@
             android:layout_height="155dp"
             android:layout_marginTop="100dp"
             android:contentDescription="@string/appLogoAlt"
-            android:src="@drawable/ic_launcher_background"
-            app:srcCompat="@drawable/dog" />
+            android:src="@drawable/dog"
+            />
 
         <TextView
             android:id="@+id/textView"
