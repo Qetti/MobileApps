@@ -1,9 +1,10 @@
-package com.example.finalTask
+package com.example.finalTask.ToDo
 
 class ToDoModel {
 
     companion object Factory{
-        fun createList(): ToDoModel=ToDoModel()
+        fun createList(): ToDoModel =
+            ToDoModel()
 
     }
 

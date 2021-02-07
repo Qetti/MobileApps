@@ -1,4 +1,4 @@
-package com.example.finalTask
+package com.example.finalTask.ToDo
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +11,8 @@ import android.widget.EditText
 import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import com.example.finalTask.*
+import com.example.finalTask.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -18,7 +20,8 @@ import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
 
 
-class ToDoActivity : AppCompatActivity(), UpdateAndDelete{
+class ToDoActivity : AppCompatActivity(),
+    UpdateAndDelete {
     lateinit var database:DatabaseReference
     var toDOList: MutableList<ToDoModel>? = null
     lateinit var adapter: ToDoAdapter
@@ -43,7 +46,8 @@ class ToDoActivity : AppCompatActivity(), UpdateAndDelete{
             alertDialog.setTitle("შეიყვანეთ ახალი პუნქტი")
             alertDialog.setView(textEditText)
             alertDialog.setPositiveButton("დამატება"){dialog, i ->
-                val todoItemData = ToDoModel.createList()
+                val todoItemData =
+                    ToDoModel.createList()
                 todoItemData.itemDataText = textEditText.text.toString()
                 todoItemData.done = false
 
@@ -84,7 +88,8 @@ class ToDoActivity : AppCompatActivity(), UpdateAndDelete{
 
             while (itemsIterator.hasNext()){
                 val currentItem = itemsIterator.next()
-                val toDoItemData = ToDoModel.createList()
+                val toDoItemData =
+                    ToDoModel.createList()
                 val map = currentItem.getValue() as HashMap<String, Any>
 
                 toDoItemData.UID = currentItem.key

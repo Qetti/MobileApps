@@ -1,4 +1,4 @@
-package com.example.finalTask
+package com.example.finalTask.ToDo
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.BaseAdapter
 import android.widget.CheckBox
 import android.widget.ImageButton
 import android.widget.TextView
+import com.example.finalTask.R
 
 class ToDoAdapter(context: Context, toDoList:MutableList<ToDoModel> ) :BaseAdapter() {
 
@@ -25,7 +26,8 @@ class ToDoAdapter(context: Context, toDoList:MutableList<ToDoModel> ) :BaseAdapt
 
         if(p1==null){
             view = inflater.inflate(R.layout.row_itemslayout, p2, false)
-            viewHolder = ListViewHolder(view)
+            viewHolder =
+                ListViewHolder(view)
             view.tag = viewHolder
         }else{
             view=p1
